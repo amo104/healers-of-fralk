@@ -1,128 +1,145 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>People They Carry</title>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <style>
-      .bgimg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('Assets/bird_main.png');
-        min-height: 100%;
-        position: relative;
-        z-index: 0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Wooden bird lure | People They Carry</title>
+    <script src="./static/js/bird.js", type="module"></script>
 </head>
+
 <body>
+    <header>
+        <p class="logo">MUSEUM TITLE</p>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button">People They Carry</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="about.html" class="w3-bar-item w3-button">About</a>
-      <a href="index.html#objects" class="w3-bar-item w3-button">Exhibit</a>
-      <a href="authors-note.html" class="w3-bar-item w3-button">Resources</a>
+        <nav id="top-nav">
+            <ul>
+                <li>About</li>
+                <a href="index.html">
+                    <li>Exhibit</li>
+                </a>
+                <a href="resources.html"><li>Resources</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper archive">
+        <section id="object-slideshow">
+            <img src="./static/images/bird_pic.jpg" class="artifact-img slide">
+            <canvas id="3d-container" class="slide"></canvas>
+            <div id="slide-buttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section id="object-information">
+
+            <section id="data">
+                <h1>Wooden bird lure</h1>
+
+                <p>As a country defined by its forest, it is no surprise that woodwork is a pervasive part of the
+                    culture. Animals are often whittled out of wood and transformed into a lure to draw them in. While
+                    the magic is imbued through the sigils drawn onto the wood, the power of the lure is nonetheless
+                    dependent on the quality of the carving. The more detailed the carving, the stronger the power. A
+                    carefully refined figure could be used to call a single animal on command. As a relatively simple
+                    bird carving, this lure acts as a slight persuasion on any birds in the area, not unlike holding out
+                    a handful of seeds.
+                </p>
+
+                <h2>Object Information</h2>
+                <h3>Identification</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Object Type</p>
+                        <p class="info-fill">magical; charm</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Description</p>
+                        <p class="info-fill">A bird figurine whittled out of wood. Etched into the wings of the bird is
+                            a runic red swirling pattern. The bird's eyes are also drawn on in red.</p>
+                    </li>
+                </ul>
+
+                <h3>Creation</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Maker</p>
+                        <p class="info-fill">backpack owner</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">unknown</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Date</p>
+                        <p class="info-fill">4095 (Xiraul)</p>
+                    </li>
+                </ul>
+
+                <h3>Material</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Material</p>
+                        <p class="info-fill">wood</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Measurements</p>
+                        <p class="info-fill">length 4 inches x width 2 inches x height 2 inches</p>
+                    </li>
+                </ul>
+
+                <h3>Acquisition</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">Xirat outskirts</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Attainment</p>
+                        <p class="info-fill">2021 (Gregorian)</p>
+                    </li>
+                </ul>
+
+                <h3>Commentary</h3>
+                <p>Every few days, the backpack owner kept a tally in his journal of the number of birds he found
+                    surrounding his camp in the morning. If that number was less than five, he would tally again the
+                    next day.
+                </p>
+            </section>
+
+            <section id="see-also">
+                <h2>See Also</h2>
+                <div id="see-also-gallery">
+                    <div class="see-also-obj">
+                        <a href="staff.html">
+                            <img class="see-also-thumb" src="./static/images/staff_pic.jpg" alt="Image">
+                            <p>Staff</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="journal.html">
+                            <img class="see-also-thumb" src="./static/images/journal_pic.png" alt="Image">
+                            <p>Journal</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="map.html">
+                            <img class="see-also-thumb" src="./static/images/map_pic.jpg" alt="Image">
+                            <p>Map</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-  </div>
-</div>
 
-<div class="w3-sidebar w3-hide-medium w3-hide-small" style="width:60%; z-index: -1;">
-  <div class="bgimg"></div>
-</div>
+    <footer>
 
-<!-- Page content -->
-<div class="w3-content" style="margin-left:60%">
-
-  <div class="w3-container w3-center w3-padding-64">
-    <h1><b>BIRD</b></h3>
-  </div>
-
-  <div class="w3-container w3-padding-16" id="objects">
-  <p>As a country defined by its forest, it is no surprise that woodwork is a pervasive part of the culture. Animals are often whittled out of wood and transformed into a lure to draw them in. While the magic is imbued through the sigils drawn onto the wood, the power of the lure is nonetheless dependent on the quality of the carving. The more detailed the carving, the stronger the power. A carefully refined figure could be used to call a single animal on command. As a relatively simple bird carving, this lure acts as a slight persuasion on any birds in the area, not unlike holding out a handful of seeds.
-  </p>
-  </div>
-
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">Object Information</h2><br>
-      <h4>Identification</h4>
-      <ul class="w3-ul">
-        <li>Title: Wooden bird lure</li>
-        <li>Object Type: magical; charm</li>
-        <li>Description: A bird figurine whittled out of wood. Etched into the wings of the bird is a runic red swirling pattern. The bird's eyes are also drawn on in red.</li>
-      </ul>
+    </footer>
     
-      <h4>Creation</h4>
-      <ul class="w3-ul">
-        <li>Maker: backpack owner</li>
-        <li>Place: unknown</li>
-        <li>Date: 4095 (Xiraul)</li>
-      </ul>
-    
-      <h4>Material</h4>
-      <ul class="w3-ul">
-        <li>Material: wood</li>
-        <li>Measurements: length 4 inches x width 2 inches x height 2 inches</li>
-      </ul>
-    
-      <h4>Acquisition</h4>
-      <ul class="w3-ul">
-        <li>Place: Xirat outskirts</li>
-        <li>Attainment: 2021 (Gregorian)</li>
-      </ul> 
-
-      <h4>Notes</h4>
-      <p>Every few days, the backpack owner kept a tally in his journal of the number of birds he found surrounding his camp in the morning. If that number was less than five, he would tally again the next day.</p>
-    </div>
-  </div>
-  
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">See Also</h2><br>
-      <div class="w3-row-padding">
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Sun</div>
-            <a href="sun.html">
-            <img src="Assets/sun_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Backpack</div>
-            <a href="backpack.html">
-              <img src="Assets/backpack_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Map</div>
-            <a href="map.html">
-            <img src="Assets/map_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-  </div>
-
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p></p>
-</footer>
-
+    <script type="text/javascript" src="./static/js/slideshow.js", type="module"></script>
 </body>
 </html>

@@ -1,127 +1,143 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>People They Carry</title>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <style>
-      .bgimg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('Assets/sun_main.png');
-        min-height: 100%;
-        position: relative;
-        z-index: 0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Handheld sun | People They Carry</title>
+    <script src="./static/js/sun.js", type="module"></script>
 </head>
+
 <body>
+    <header>
+        <p class="logo">MUSEUM TITLE</p>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button">People They Carry</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="about.html" class="w3-bar-item w3-button">About</a>
-      <a href="index.html#objects" class="w3-bar-item w3-button">Exhibit</a>
-      <a href="authors-note.html" class="w3-bar-item w3-button">Resources</a>
+        <nav id="top-nav">
+            <ul>
+                <li>About</li>
+                <a href="index.html">
+                    <li>Exhibit</li>
+                </a>
+                <a href="resources.html"><li>Resources</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper archive">
+        <section id="object-slideshow">
+            <img src="./static/images/sun_pic.jpg" class="artifact-img slide">
+            <canvas id="3d-container" class="slide"></canvas>
+            <div id="slide-buttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section id="object-information">
+
+            <section id="data">
+                <h1>Handheld sun</h1>
+
+                <p>As the weather changes and the sun grows scarce, plants that require large amounts of sunlight cycle
+                    out. However, with an item such as this handheld sun, it is possible to extend the longevity of such
+                    plants throughout harsher seasons. While a sun is a particularly rare item, these kinds of heating
+                    and lighting solutions are often utilized by plantfolk who would otherwise have to hibernate or
+                    migrate to a warmer country during colder periods.
+                </p>
+
+                <h2>Object Information</h2>
+                <h3>Identification</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Object Type</p>
+                        <p class="info-fill">magical; tool</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Description</p>
+                        <p class="info-fill">A swirling gaseous orb of varying orange and yellow hues. The orb glows
+                            brightly.</p>
+                    </li>
+                </ul>
+
+                <h3>Creation</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Maker</p>
+                        <p class="info-fill">unknown</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">unknown</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Date</p>
+                        <p class="info-fill">unknown</p>
+                    </li>
+                </ul>
+
+                <h3>Material</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Material</p>
+                        <p class="info-fill">gas, magic</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Measurements</p>
+                        <p class="info-fill">length 7 inches x width 7 inches x height 7 inches</p>
+                    </li>
+                </ul>
+
+                <h3>Acquisition</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">Xirat outskirts</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Attainment</p>
+                        <p class="info-fill">2021 (Gregorian)</p>
+                    </li>
+                </ul>
+
+                <h3>Commentary</h3>
+                <p>Despite the capability of immense heat, the sun did not seem to have any effect on the snow or
+                    environment surrounding the backpack. Light effects are easily contained and heat effects seem to be
+                    triggered by physical contact with organic matter.</p>
+            </section>
+
+            <section id="see-also">
+                <h2>See Also</h2>
+                <div id="see-also-gallery">
+                    <div class="see-also-obj">
+                        <a href="staff.html">
+                            <img class="see-also-thumb" src="./static/images/staff_pic.jpg" alt="Image">
+                            <p>Staff</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="journal.html">
+                            <img class="see-also-thumb" src="./static/images/journal_pic.png" alt="Image">
+                            <p>Journal</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="map.html">
+                            <img class="see-also-thumb" src="./static/images/map_pic.jpg" alt="Image">
+                            <p>Map</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-  </div>
-</div>
 
-<div class="w3-sidebar w3-hide-medium w3-hide-small" style="width:60%; z-index: -1;">
-  <div class="bgimg"></div>
-</div>
+    <footer>
 
-<!-- Page content -->
-<div class="w3-content" style="margin-left:60%">
-
-  <div class="w3-container w3-center w3-padding-64">
-    <h1><b>SUN</b></h3>
-  </div>
-
-  <div class="w3-container w3-padding-16" id="objects">
-  <p>As the weather changes and the sun grows scarce, plants that require large amounts of sunlight cycle out. However, with an item such as this handheld sun, it is possible to extend the longevity of such plants throughout harsher seasons. While a sun is a particularly rare item, these kinds of heating and lighting solutions are often utilized by plantfolk who would otherwise have to hibernate or migrate to a warmer country during colder periods.
-  </p>
-  </div>
-
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">Object Information</h2><br>
-      <h4>Identification</h4>
-      <ul class="w3-ul">
-        <li>Title: Handheld sun</li>
-        <li>Object Type: magical; tool</li>
-        <li>Description: A swirling gaseous orb of varying orange and yellow hues. The orb glows brightly. Distinct rings of light rotate around the orb.</li>
-      </ul>
-    
-      <h4>Creation</h4>
-      <ul class="w3-ul">
-        <li>Maker: unknown</li>
-        <li>Place: unknwon</li>
-        <li>Date: unknown</li>
-      </ul>
-    
-      <h4>Material</h4>
-      <ul class="w3-ul">
-        <li>Material: gas, magic</li>
-        <li>Measurements: length 7 inches x width 7 inches x height 7 inches</li>
-      </ul>
-    
-      <h4>Acquisition</h4>
-      <ul class="w3-ul">
-        <li>Place: Xirat outskirts</li>
-        <li>Attainment: 2021 (Gregorian)</li>
-      </ul> 
-
-      <h4>Notes</h4>
-      <p>Despite the capability of immense heat, the sun did not seem to have any effect on the snow or environment surrounding the backpack. Light effects are easily contained and heat effects seem to be triggered by physical contact with organic matter.</p>
-    </div>
-  </div>
-  
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">See Also</h2><br>
-      <div class="w3-row-padding">
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Bird</div>
-            <a href="bird.html">
-            <img src="Assets/bird_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Staff</div>
-            <a href="staff.html">
-            <img src="Assets/staff_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Backpack</div>
-            <a href="backpack.html">
-              <img src="Assets/backpack_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p></p>
-</footer>
+    </footer>
+    <script type="text/javascript" src="./static/js/slideshow.js", type="module"></script>
 
 </body>
+
 </html>

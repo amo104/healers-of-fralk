@@ -1,128 +1,145 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>People They Carry</title>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <style>
-      .bgimg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('Assets/staff_main.png');
-        min-height: 100%;
-        position: relative;
-        z-index: 0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Wooden staff | People They Carry</title>
+    <script src="./static/js/staff.js", type="module"></script>
 </head>
+
 <body>
+    <header>
+        <p class="logo">MUSEUM TITLE</p>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button">People They Carry</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="about.html" class="w3-bar-item w3-button">About</a>
-      <a href="index.html#objects" class="w3-bar-item w3-button">Exhibit</a>
-      <a href="authors-note.html" class="w3-bar-item w3-button">Resources</a>
+        <nav id="top-nav">
+            <ul>
+                <li>About</li>
+                <a href="index.html">
+                    <li>Exhibit</li>
+                </a>
+                <a href="resources.html"><li>Resources</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper archive">
+        <section id="object-slideshow">
+            <img src="./static/images/staff_pic.jpg" class="artifact-img slide">
+            <canvas id="3d-container" class="slide"></canvas>
+            <div id="slide-buttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+        <section id="object-information">
+
+            <section id="data">
+                <h1>Wooden staff</h1>
+
+                <p>The people of Thifth were dedicated practitioners of natural magics, with strong communities of
+                    druidic and clerical spellcasters. Dedicated tools for channeling magic, such as a staff, were
+                    unpopular as they signaled a need for an intermediary between the magician and the natural world.
+                    Nonetheless, staves, wands, and various implements were often used to heighten particular
+                    spellcasting needs for vocational specializations of magic.
+                </p>
+
+                <h2>Object Information</h2>
+                <h3>Identification</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Object Type</p>
+                        <p class="info-fill">weapon; staff</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Description</p>
+                        <p class="info-fill">A wooden staff cut from a tree branch. The branch is covered in moss and
+                            maintains natural curves and warps. The tip of the wood is burnt black. The burnt section is
+                            wrapped in an aged cloth that attaches a spearhead to the tip. The spearhead is shaped like
+                            a large, rhomboid leaf that has partially burned, giving it the shape of a sickle..</p>
+                    </li>
+                </ul>
+
+                <h3>Creation</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Maker</p>
+                        <p class="info-fill">unknown</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">Thifth</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Date</p>
+                        <p class="info-fill">4087 (Xiraul)</p>
+                    </li>
+                </ul>
+
+                <h3>Material</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Material</p>
+                        <p class="info-fill">wood, cloth, metal</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Measurements</p>
+                        <p class="info-fill">length 2 inches x width 5 inches x height 50 inches</p>
+                    </li>
+                </ul>
+
+                <h3>Acquisition</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">Xirat outskirts</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Attainment</p>
+                        <p class="info-fill">2021 (Gregorian)</p>
+                    </li>
+                </ul>
+
+                <h3>Commentary</h3>
+                <p>Recovered several hundred feet from the site of the backpack and presumed to belong to the same
+                    owner. Edges of the spearhead glow orange in the dark. Slightly warm to the touch. Flora decorating
+                    the staff are alive and of unknown species.</p>
+            </section>
+
+            <section id="see-also">
+                <h2>See Also</h2>
+                <div id="see-also-gallery">
+                    <div class="see-also-obj">
+                        <a href="staff.html">
+                            <img class="see-also-thumb" src="./static/images/staff_pic.jpg" alt="Image">
+                            <p>Staff</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="journal.html">
+                            <img class="see-also-thumb" src="./static/images/journal_pic.png" alt="Image">
+                            <p>Journal</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="map.html">
+                            <img class="see-also-thumb" src="./static/images/map_pic.jpg" alt="Image">
+                            <p>Map</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-  </div>
-</div>
 
-<div class="w3-sidebar w3-hide-medium w3-hide-small" style="width:60%; z-index: -1;">
-  <div class="bgimg"></div>
-</div>
+    <footer>
 
-<!-- Page content -->
-<div class="w3-content" style="margin-left:60%">
+    </footer>
 
-  <div class="w3-container w3-center w3-padding-64">
-    <h1><b>STAFF</b></h3>
-  </div>
-
-  <div class="w3-container w3-padding-16" id="objects">
-  <p>The people of Thifth were dedicated practitioners of natural magics, with strong communities of druidic and clerical spellcasters. Dedicated tools for channeling magic, such as a staff, were unpopular as they signaled a need for an intermediary between the magician and the natural world. Nonetheless, staves, wands, and various implements were often used to heighten particular spellcasting needs for vocational specializations of magic.
-  </p>
-  </div>
-
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">Object Information</h2><br>
-      <h4>Identification</h4>
-      <ul class="w3-ul">
-        <li>Title: Wooden staff</li>
-        <li>Object Type: weapon; staff</li>
-        <li>Description: A wooden staff cut from a tree branch. The branch is covered in moss and maintains natural curves and warps. The tip of the wood is burnt black. The burnt section is wrapped in an aged cloth that attaches a spearhead to the tip. The spearhead is shaped like a large, rhomboid leaf that has partially burned, giving it the shape of a sickle.</li>
-      </ul>
-    
-      <h4>Creation</h4>
-      <ul class="w3-ul">
-        <li>Maker: unknown</li>
-        <li>Place: Thifth</li>
-        <li>Date: 4087 (Xiraul)</li>
-      </ul>
-    
-      <h4>Material</h4>
-      <ul class="w3-ul">
-        <li>Material: wood, cloth, metal</li>
-        <li>Measurements: length 2 inches x width 5 inches x height 50 inches</li>
-      </ul>
-    
-      <h4>Acquisition</h4>
-      <ul class="w3-ul">
-        <li>Place: Xirat outskirts</li>
-        <li>Attainment: 2021 (Gregorian)</li>
-      </ul> 
-
-      <h4>Notes</h4>
-      <p>Recovered several hundred feet from the site of the backpack and presumed to belong to the same owner. Edges of the spearhead glow orange in the dark. Slightly warm to the touch. Flora decorating the staff are alive and of unknown species.</p>
-    </div>
-  </div>
-  
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">See Also</h2><br>
-      <div class="w3-row-padding">
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Sun</div>
-            <a href="sun.html">
-            <img src="Assets/sun_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Bird</div>
-            <a href="bird.html">
-            <img src="Assets/bird_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Journal</div>
-            <a href="journal.html">
-            <img src="Assets/journal_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-  </div>
-
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p></p>
-</footer>
-
+    <script type="text/javascript" src="./static/js/slideshow.js", type="module"></script>
 </body>
+
 </html>

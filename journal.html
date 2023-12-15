@@ -1,128 +1,137 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>People They Carry</title>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <style>
-      .bgimg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('Assets/journal_main.png');
-        min-height: 100%;
-        position: relative;
-        z-index: 0;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Field journal of the backpack owner | People They Carry</title>
 </head>
+
 <body>
+    <header>
+        <p class="logo">MUSEUM TITLE</p>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="index.html" class="w3-bar-item w3-button">People They Carry</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="about.html" class="w3-bar-item w3-button">About</a>
-      <a href="index.html#objects" class="w3-bar-item w3-button">Exhibit</a>
-      <a href="authors-note.html" class="w3-bar-item w3-button">Resources</a>
+        <nav id="top-nav">
+            <ul>
+                <li>About</li>
+                <a href="index.html">
+                    <li>Exhibit</li>
+                </a>
+                <a href="resources.html"><li>Resources</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper archive">
+        <section id="object-slideshow">
+            <img src="./static/images/journal_pic.png">
+            <div id="3dcontainer"></div>
+        </section>
+
+        <section id="object-information">
+
+            <section id="data">
+                <h1>Field journal of the backpack owner</h1>
+
+                <p>The owner of the backpack, like many spellcasters from Thifth, focuses his magical practice on his
+                    relationship with natural life. While this book also houses the everyday scrawlings of its keeper,
+                    this journal maintains careful botanical sketches of flora around Thifth. Alongside these sketches
+                    are brief notes on the location of its finding and any unique properties of the plant. Many of these
+                    sketches focus on plants that appear sickly or dying, potentially implying a career as a natural
+                    cleric or remedial druid.
+                </p>
+
+                <h2>Object Information</h2>
+                <h3>Identification</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Object Type</p>
+                        <p class="info-fill">book</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Description</p>
+                        <p class="info-fill">A leather notebook. The notebook is tied shut by a thin line of leather that wraps around the book.</p>
+                    </li>
+                </ul>
+
+                <h3>Creation</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Maker</p>
+                        <p class="info-fill">unknown; backpack owner</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">unknown</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Date</p>
+                        <p class="info-fill">4095 (Xiraul)</p>
+                    </li>
+                </ul>
+
+                <h3>Material</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Material</p>
+                        <p class="info-fill">paper, leather, ink</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Measurements</p>
+                        <p class="info-fill">length 1 inch x width 5 inches x height 7 inches</p>
+                    </li>
+                </ul>
+
+                <h3>Acquisition</h3>
+                <ul>
+                    <li class="info-il">
+                        <p class="info-category">Place</p>
+                        <p class="info-fill">Xirat outskirts</p>
+                    </li>
+                    <li class="info-il">
+                        <p class="info-category">Attainment</p>
+                        <p class="info-fill">2021 (Gregorian)</p>
+                    </li>
+                </ul>
+
+                <h3>Commentary</h3>
+                <p>Written in Irameld, the dominant language of the southeastern region of Fralk. Alongside the Irameld
+                    are occasional, short jottings in an unidentifiable language. Several pages are either ripped out or
+                    completely blacked out with ink. Careful study of blacked-out pages show them to all be drawings of
+                    the same flower.</p>
+            </section>
+
+            <section id="see-also">
+                <h2>See Also</h2>
+                <div id="see-also-gallery">
+                    <div class="see-also-obj">
+                        <a href="staff.html">
+                            <img class="see-also-thumb" src="./static/images/staff_pic.jpg" alt="Image">
+                            <p>Staff</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="journal.html">
+                            <img class="see-also-thumb" src="./static/images/journal_pic.png" alt="Image">
+                            <p>Journal</p>
+                        </a>
+                    </div>
+
+                    <div class="see-also-obj">
+                        <a href="map.html">
+                            <img class="see-also-thumb" src="./static/images/map_pic.jpg" alt="Image">
+                            <p>Map</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-  </div>
-</div>
 
-<div class="w3-sidebar w3-hide-medium w3-hide-small" style="width:60%; z-index: -1;">
-  <div class="bgimg"></div>
-</div>
+    <footer>
 
-<!-- Page content -->
-<div class="w3-content" style="margin-left:60%">
-
-  <div class="w3-container w3-center w3-padding-64">
-    <h1><b>JOURNAL</b></h3>
-  </div>
-
-  <div class="w3-container w3-padding-16" id="objects">
-  <p>The owner of the backpack, like many spellcasters from Thifth, focuses his magical practice on his relationship with natural life. While this book also houses the everyday scrawlings of its keeper, this journal maintains careful botanical sketches of flora around Thifth. Alongside these sketches are brief notes on the location of its finding and any unique properties of the plant. Many of these sketches focus on plants that appear sickly or dying, potentially implying a career as a natural cleric or remedial druid.
-  </p>
-  </div>
-
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">Object Information</h2><br>
-      <h4>Identification</h4>
-      <ul class="w3-ul">
-        <li>Title: Field journal of the backpack owner</li>
-        <li>Object Type: book</li>
-        <li>Description: A leather notebook. The notebook is tied shut by a thin line of leather that wraps around the book.</li>
-      </ul>
-    
-      <h4>Creation</h4>
-      <ul class="w3-ul">
-        <li>Maker: unknown; backpack owner</li>
-        <li>Place: unknown</li>
-        <li>Date: 4095 (Xiraul)</li>
-      </ul>
-    
-      <h4>Material</h4>
-      <ul class="w3-ul">
-        <li>Material: paper, leather, ink</li>
-        <li>Measurements: length 1 inch x width 5 inches x height 7 inches</li>
-      </ul>
-    
-      <h4>Acquisition</h4>
-      <ul class="w3-ul">
-        <li>Place: Xirat outskirts</li>
-        <li>Attainment: 2021 (Gregorian)</li>
-      </ul> 
-
-      <h4>Notes</h4>
-      <p>Written in Irameld, the dominant language of the southeastern region of Fralk. Alongside the Irameld are occasional, short jottings in an unidentifiable language. Several pages are either ripped out or completely blacked out with ink. Careful study of blacked-out pages show them to all be drawings of the same flower.</p>
-    </div>
-  </div>
-  
-  <div class="w3-row w3-padding-16">
-    <div class="w3-col w3-padding-large">
-      <h2 class="w3-center">See Also</h2><br>
-      <div class="w3-row-padding">
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Backpack</div>
-            <a href="backpack.html">
-              <img src="Assets/backpack_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Map</div>
-            <a href="map.html">
-            <img src="Assets/map_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        <div class="w3-col m6 w3-margin-bottom">
-          <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Sun</div>
-            <a href="sun.html">
-            <img src="Assets/sun_equal.png" alt="Image" style="width:100%; margin-bottom: 12px">
-            </a>
-          </div>
-        </div>
-        </div>
-      </div>
-  </div>
-
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p></p>
-</footer>
-
+    </footer>
 </body>
+
 </html>
